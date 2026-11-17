@@ -1,0 +1,149 @@
+/* Crystal Art Kit | EasyOrders Global CSS | standalone external stylesheet
+   Import this CSS in the landing page's Global CSS field only.
+   This is NOT a new EasyOrders section. */
+
+/* Shared responsive feature cards */
+/* V5: Stable EasyOrders icon sections; no dependency on generated CSS hash names.
+   Direct-parent grid fixes the default 3-column layout even with one card. */
+.css-pdin8h,.muirtl-new-1ubuq2d,div:has(> .icon-container){
+  box-sizing:border-box!important;display:grid!important;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr))!important;
+  direction:rtl!important;justify-items:stretch!important;align-items:stretch!important;
+  width:100%!important;max-width:1160px!important;min-width:0!important;
+  gap:clamp(12px,2.4vw,22px)!important;
+  padding:clamp(8px,2vw,18px)!important;
+  margin:0 auto!important;
+}
+.icon-container{
+  box-sizing:border-box!important;display:flex!important;flex-direction:column!important;
+  justify-content:flex-start!important;align-items:stretch!important;
+  position:relative!important;float:none!important;flex:1 1 auto!important;
+  width:100%!important;max-width:none!important;min-width:0!important;
+  height:auto!important;min-height:0!important;margin:0!important;
+  padding:clamp(16px,2.6vw,24px)!important;
+  border:1px solid #efd7df!important;border-radius:20px!important;
+  background:#fffaf6!important;
+  box-shadow:0 7px 22px rgba(50,19,45,.055)!important;
+  overflow:visible!important;gap:13px!important;direction:rtl!important;
+}
+/* Single feature with a real image grows into a full-width split section.
+   3-item steps remain stacked inside their own cards because of auto-fit. */
+.icon-container:has(.icon-image-container img[src]:not([src=""])){ 
+  display:grid!important;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))!important;
+  align-items:center!important;
+  gap:clamp(14px,3vw,35px)!important;
+}
+.icon-image-container{box-sizing:border-box!important;display:flex!important;order:0!important;
+  min-width:0!important;width:100%!important;max-width:100%!important;
+  align-items:center!important;justify-content:center!important;
+  padding:0!important;margin:0!important;border-radius:14px!important;
+  overflow:hidden!important;background:#fff!important}
+/* Empty slots are created by the importer when author_image is blank. */
+.icon-image-container:not(:has(img[src]:not([src=""]))){display:none!important}
+.icon-image-container img[src=""],.icon-image-container img:not([src]){display:none!important}
+.icon-image-container img{box-sizing:border-box!important;display:block!important;
+  max-width:100%!important;width:100%!important;height:auto!important;
+  max-height:390px!important;object-fit:contain!important}
+.icon-text-container{box-sizing:border-box!important;order:1!important;
+  display:flex!important;flex-direction:column!important;align-items:center!important;
+  width:100%!important;max-width:100%!important;min-width:0!important;
+  gap:9px!important;padding:0!important;margin:0!important;
+  direction:rtl!important;text-align:center!important}
+.icon-container p{box-sizing:border-box!important;margin:0!important;padding:0!important;
+  width:100%!important;max-width:100%!important;
+  font:800 clamp(17px,2.3vw,24px)/1.55 'Cairo',Tahoma,sans-serif!important;
+  color:#312039!important;text-align:center!important;direction:rtl!important;
+  white-space:normal!important;overflow-wrap:break-word!important;word-break:normal!important}
+.icon-container span{box-sizing:border-box!important;display:block!important;
+  margin:0!important;padding:0!important;max-width:100%!important;
+  font:500 clamp(14px,1.65vw,17px)/1.82 'Cairo',Tahoma,sans-serif!important;
+  color:#615263!important;text-align:center!important;direction:rtl!important;
+  white-space:normal!important;overflow-wrap:break-word!important;word-break:normal!important}
+/* Preserve RTL reading order, and limit motion and horizontal overflow. */
+@media (max-width:600px){
+  .icon-container{padding:16px!important;border-radius:16px!important;gap:11px!important}
+  .icon-container p{font-size:clamp(18px,5vw,22px)!important}
+  .icon-container span{font-size:14px!important;line-height:1.75!important}
+  .icon-image-container img{max-height:270px!important}
+}
+
+/* V6 center text */
+.icon-text-container,.icon-text-container *{text-align:center!important;align-items:center!important;justify-content:center!important}
+.icon-container p,.icon-container span{margin-left:auto!important;margin-right:auto!important;text-align:center!important}
+
+/* Hero */
+/* Adaptive conversion hero: its own actual width decides one or two columns */
+.advanced-text.container{box-sizing:border-box;container-type:inline-size;direction:rtl!important;isolation:isolate;display:grid!important;grid-template-columns:repeat(auto-fit,minmax(min(100%,350px),1fr));align-items:center!important;gap:clamp(12px,2vw,28px);width:calc(100% - 16px);max-width:1180px;min-width:0;margin:8px auto 27px;padding:clamp(12px,2vw,28px)!important;border:1px solid #f0d8de;border-radius:25px;background:radial-gradient(ellipse at 0 0,rgba(255,220,158,.43),transparent 56%),linear-gradient(155deg,#fffaf4 0%,#fff2ef 65%,#fff0f6 100%);box-shadow:0 18px 42px rgba(75,29,51,.065);overflow:hidden}
+.advanced-text.container>div{box-sizing:border-box;width:100%!important;min-width:0!important;max-width:100%!important;align-self:center}
+.advanced-text.container>div:first-child{order:2}
+.advanced-text.container>div:last-child{order:1}
+.advanced-text .ql-editor{box-sizing:border-box;direction:rtl!important;display:flex;flex-direction:column;align-items:stretch;gap:12px;width:100%!important;min-width:0!important;max-width:100%;padding:4px 7px!important;text-align:right!important;background:transparent!important}
+.advanced-text .ql-editor h5{display:inline-block;align-self:flex-start;margin:0!important;padding:7px 12px!important;border:1px solid #f0cbd9;border-radius:999px;color:#8e2051!important;background:#fff!important;font:800 12px/1.6 'Cairo',Tahoma,sans-serif!important}
+.advanced-text .ql-editor h1{box-sizing:border-box;margin:0!important;max-width:100%;white-space:normal;overflow-wrap:anywhere;color:#291932!important;font:900 clamp(25px,4.5cqw,50px)/1.39 'Cairo',Tahoma,sans-serif!important;letter-spacing:-.015em}
+.advanced-text .ql-editor h4{box-sizing:border-box;margin:0!important;max-width:100%;white-space:normal;overflow-wrap:anywhere;color:#594657!important;font:500 clamp(14px,2cqw,18px)/1.8 'Cairo',Tahoma,sans-serif!important}
+.advanced-text .ql-editor h3{box-sizing:border-box;display:block;align-self:stretch;max-width:100%;margin:0!important;padding:11px 9px!important;border:1px dashed #dd9eb7;border-radius:13px;background:#fff9fb;color:#ae165a!important;text-align:center!important;white-space:normal;overflow-wrap:anywhere;font:900 clamp(18px,3cqw,28px)/1.6 'Cairo',Tahoma,sans-serif!important}
+.advanced-text .ql-editor p{box-sizing:border-box;margin:0!important;max-width:100%;white-space:normal;overflow-wrap:anywhere;color:#685262!important;text-align:center;font:600 13px/1.7 'Cairo',Tahoma,sans-serif!important}
+.advanced-text.container img{display:block;box-sizing:border-box;width:100%!important;max-width:100%!important;height:auto!important;max-height:440px!important;object-fit:contain;border:1px solid #f1e1e4;border-radius:19px;background:#fff}
+.advanced-text.container button{box-sizing:border-box;display:block;width:100%!important;max-width:100%;min-height:56px;margin:8px 0 0!important;padding:13px!important;border:0!important;border-radius:15px!important;color:#fff!important;background:#b91560!important;box-shadow:0 10px 22px rgba(185,21,96,.2);white-space:normal;overflow-wrap:anywhere;font:900 clamp(16px,2.4cqw,20px)/1.5 'Cairo',Tahoma,sans-serif!important;cursor:pointer;transition:background-color .15s}
+.advanced-text.container button:hover{background:#97104f!important}
+.advanced-text.container button:focus-visible{outline:3px solid #28152e;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.advanced-text.container button{transition:none!important}}
+/* V6 center text */
+.advanced-text.container,.advanced-text.container *{text-align:center!important}
+.advanced-text.container{justify-items:center!important}
+
+/* Centered editorial text */
+/* Readable editorial statement in the narrowest embed */
+.simple-container{box-sizing:border-box;container-type:inline-size;direction:rtl;width:calc(100% - 20px);max-width:980px;min-width:0;margin:12px auto 27px;padding:clamp(20px,4vw,44px) clamp(14px,4vw,52px)!important;text-align:center;border-radius:24px;background:#271931;border:1px solid #4b3350;box-shadow:0 12px 29px rgba(35,12,38,.09)}
+.simple-container h3,.simple-container .title{box-sizing:border-box;margin:0 auto!important;max-width:100%;width:100%;white-space:normal;overflow-wrap:anywhere;color:#fff8ed!important;font:850 clamp(21px,4.2cqw,37px)/1.65 'Cairo',Tahoma,sans-serif!important}
+/* V6 center text */
+.simple-container,.simple-container *{text-align:center!important}
+
+/* Standalone purchase CTA (scoped: never styles all buttons) */
+/* One unmistakable purchase action; no fake timer, counters or claims */
+:is(.buy-button-container button,.buy-button-section button,.buy_button_container button,.buy_button_section button,[data-section-type="buy_button"] button,[data-type="buy_button"] button,button.buy-button,button.buy_button){box-sizing:border-box;display:block;min-height:59px;width:calc(100% - 28px);max-width:490px;margin:12px auto 30px!important;padding:13px 22px!important;border:0!important;border-radius:15px!important;color:#fff!important;background:#b91560!important;box-shadow:0 9px 22px rgba(185,21,96,.18);font:900 clamp(16px,4.4vw,20px)/1.55 'Cairo',Tahoma,sans-serif!important;cursor:pointer;transition:transform .15s,background .15s}
+:is(.buy-button-container button,.buy-button-section button,.buy_button_container button,.buy_button_section button,[data-section-type="buy_button"] button,[data-type="buy_button"] button,button.buy-button,button.buy_button):hover{background:#991049!important}
+:is(.buy-button-container button,.buy-button-section button,.buy_button_container button,.buy_button_section button,[data-section-type="buy_button"] button,[data-type="buy_button"] button,button.buy-button,button.buy_button):focus-visible{outline:3px solid #271833;outline-offset:3px}
+@media(min-width:840px){:is(.buy-button-container button,.buy-button-section button,.buy_button_container button,.buy_button_section button,[data-section-type="buy_button"] button,[data-type="buy_button"] button,button.buy-button,button.buy_button){min-height:65px;margin:17px auto 40px!important}}
+@media(prefers-reduced-motion:reduce){:is(.buy-button-container button,.buy-button-section button,.buy_button_container button,.buy_button_section button,[data-section-type="buy_button"] button,[data-type="buy_button"] button,button.buy-button,button.buy_button){transition:none!important}}
+
+/* V6 center text */
+:is(.buy-button-container button,.buy-button-section button,.buy_button_container button,.buy_button_section button,[data-section-type="buy_button"] button,[data-type="buy_button"] button,button.buy-button,button.buy_button){text-align:center!important}
+
+/* FAQ */
+/* Accordion never gets fixed desktop width inside a mobile preview */
+.faq-container{box-sizing:border-box;container-type:inline-size;direction:rtl;width:calc(100% - 20px);max-width:960px;min-width:0;margin:20px auto 38px;padding:clamp(12px,3vw,32px)!important;border:1px solid #e8d8db;border-radius:22px;background:#fff9f3;overflow:hidden}
+.faq-container h3{box-sizing:border-box;width:100%;max-width:100%;margin:0 0 17px!important;white-space:normal;overflow-wrap:anywhere;color:#2a1934!important;font:900 clamp(21px,4.2cqw,34px)/1.5 'Cairo',Tahoma,sans-serif!important}
+.faq-container .accordion{box-sizing:border-box;max-width:100%;overflow:hidden;margin:0 0 9px;border:1px solid #eddde0;border-radius:13px;background:#fff}
+.faq-container button{box-sizing:border-box;display:block;min-height:52px;width:100%!important;max-width:100%;margin:0!important;padding:14px 12px!important;text-align:right;border:0!important;background:transparent!important;color:#302239!important;white-space:normal;overflow-wrap:anywhere;font:800 clamp(14px,2.4cqw,18px)/1.65 'Cairo',Tahoma,sans-serif!important;cursor:pointer}
+.faq-container p{box-sizing:border-box;max-width:100%;margin:0;padding:0 12px 16px!important;color:#5f5462!important;white-space:normal;overflow-wrap:anywhere;font:500 15px/1.85 'Cairo',Tahoma,sans-serif!important}
+.faq-container button:focus-visible{outline:3px solid #a71557;outline-offset:-3px}
+/* V6 center text */
+.faq-container,.faq-container *{text-align:center!important}
+
+/* Additional native text-align controls */
+
+.icon-text-container, .icon-text-container *,
+.icon-container p, .icon-container span,
+.advanced-text .ql-editor, .advanced-text .ql-editor *,
+.simple-container, .simple-container *,
+.faq-container, .faq-container * {
+  text-align: center !important;
+}
+.icon-text-container {
+  align-items: center !important;
+  justify-content: center !important;
+}
+.icon-container p, .icon-container span {
+  margin-inline: auto !important;
+}
+@media (max-width: 600px) {
+  .icon-container, .icon-text-container,
+  .advanced-text.container, .simple-container,
+  .faq-container {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
